@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SQLite</string>
+
+    <string name="anadir_contacto">Añadir contacto</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Eliminar</string>
+    <string name="back">Volver</string>
+</resources>

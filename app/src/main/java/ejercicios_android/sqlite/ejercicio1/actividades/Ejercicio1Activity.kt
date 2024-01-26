@@ -15,6 +15,7 @@ import ejercicios_android.sqlite.R
 import ejercicios_android.sqlite.ejercicio1.DataHelper
 import ejercicios_android.sqlite.Extra
 import ejercicios_android.sqlite.ejercicio1.Contacto
+import kotlin.random.Random
 
 class Ejercicio1Activity : AppCompatActivity() {
     private val INSERTAR_DATOS_PRUEBA = true
@@ -42,10 +43,14 @@ class Ejercicio1Activity : AppCompatActivity() {
         if(INSERTAR_DATOS_PRUEBA) {
             mDb.deleteAll()
             for(i in 0..100) {
-                mDb.insert( Contacto(-1,
-                               "Contacto SQLite " + String.format("%03d", i),
-                               String.format("%03d %03d %03d", i, i, i),
-                               "sqlite" + String.format("%03d", i)  + "@email.com" ))
+                mDb.insert(Contacto(
+                        -1,
+                        "Contacto SQLite " + String.format("%03d", i),
+                        String.format("%03d %03d %03d", i, i, i),
+                        "sqlite" + String.format("%03d", i) + "@email.com"
+                    ),
+
+                )
             }
         }
 

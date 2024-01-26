@@ -1,5 +1,6 @@
 package ejercicios_android.sqlite.ejercicio1.actividades
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText

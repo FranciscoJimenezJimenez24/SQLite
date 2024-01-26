@@ -37,7 +37,7 @@ class DataHelper(contexto: Context) {
     }
 
     fun selectById(id: Long): Contacto? {
-        val columns = arrayOf("nombre", "telefono", "email","edad")
+        val columns = arrayOf("nombre", "telefono", "email")
         val selection = "_id = ?"
         val args = arrayOf(id.toString())
         val limit = "1"
